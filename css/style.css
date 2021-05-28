@@ -11,7 +11,7 @@
     justify-content: space-between;
     /* centrer les éléments à la div */
     align-items: center;
-    min-height: 8hv;
+    min-height: 100px;
     background-color: grey;
     font-family: 'DM', sans-serif;
     width: 90%;
@@ -32,4 +32,47 @@
 }
 .nav-menu a{
     text-decoration: none;
+}
+
+.burger {
+    display:none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+/* Taille tablette */
+@media screen and (max-width: 768px) {
+    .nav-menu{
+        position: absolute;
+        right: 0px;
+        height: 400px;
+        top: 10vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        /*display: none;*/
+        
+    }
+
+
+    .burger {
+        display: block;
+    }
+
+
+
+}
+
+.nav-active {
+    /*display: block;*/
+    transform: translateX(0%);
 }
