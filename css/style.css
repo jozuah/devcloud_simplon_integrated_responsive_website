@@ -1,0 +1,35 @@
+/*Reset des propriétés - normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    /* On espace la div du logo et des lien */
+    justify-content: space-between;
+    /* centrer les éléments à la div */
+    align-items: center;
+    min-height: 8hv;
+    background-color: grey;
+    font-family: 'DM', sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-menu {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-around;
+    /*On rajoute une width pour utiliser le space around*/
+    width: 50%;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+}
