@@ -39,6 +39,10 @@
     
 }
 
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
 
 
 .nav-menu a:hover {
@@ -52,10 +56,6 @@
     
 }
 
-.nav-menu a{
-    text-decoration: none;
-    color: black;
-}
 
 .burger {
     display:none;
@@ -100,7 +100,7 @@
 
 /**************************************** Corps de page ****************************/
 @media screen and (max-width: 768px) {
-    .container {
+    .half-container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -134,8 +134,67 @@
         border-radius: 8px;
     }
 
+    .cta {
+        display: flex;
+        margin-top: 20px;
+        background-color: #FE142F; /* Rose */
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 8px;
+        font-family: 'DM', sans-serif;
+      }
+
 }
 
+/************** corps de page desktop ***********/
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        /*align-items: center;*/
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        background-color: #232323;
+        border-radius: 8px;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        background-image: url("../images/gamer_desktop.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 500px;
+
+    }
+
+    .half-container {
+        width: 65%;
+    }
+
+    .content-text-slogan {
+        margin-top: 5%;
+        font-size: 85px;
+        font-weight: 500;
+        font-family: 'DM', sans-serif;
+        color: white;
+    }
+
+    .content-text-Sub-heading {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'DM', sans-serif;
+        color: white;
+        width: 35%;
+        
+    }
+}
+
+
+/******** Button sign up *******/
 .cta {
     margin-top: 20px;
     background-color: #FE142F; /* Rose */
