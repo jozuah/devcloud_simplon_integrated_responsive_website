@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/******************************** Barre de Navigation **********************************/
+
 .nav {
     display: flex;
     /* On espace la div du logo et des lien */
@@ -12,10 +14,14 @@
     /* centrer les éléments à la div */
     align-items: center;
     min-height: 100px;
-    background-color: grey;
+    /*background-color: grey;*/
     font-family: 'DM', sans-serif;
     width: 90%;
     margin: auto;
+}
+
+.logo {
+
 }
 
 .nav-menu {
@@ -25,13 +31,30 @@
     justify-content: space-around;
     /*On rajoute une width pour utiliser le space around*/
     width: 50%;
+    color: black;
 }
 
 .nav-menu li {
     list-style: none;
+    
 }
+
+
+
+.nav-menu a:hover {
+
+    background-color: #FE142F;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: underline;
+
+    
+}
+
 .nav-menu a{
     text-decoration: none;
+    color: black;
 }
 
 .burger {
@@ -41,7 +64,7 @@
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 5px;
     margin-right: 20px;
 }
@@ -58,8 +81,7 @@
         flex-direction: column;
         align-items: center;
         width: 40%;
-        transform: translateX(100%);
-        /*display: none;*/
+        display: none;
         
     }
 
@@ -73,6 +95,66 @@
 }
 
 .nav-active {
-    /*display: block;*/
-    transform: translateX(0%);
+    display: flex;
+}
+
+/**************************************** Corps de page ****************************/
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 5%;
+        margin: auto;
+    }
+
+    .content-text-slogan {
+        margin-top: 20px;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: 'DM', sans-serif;
+    }
+
+    .content-text-Sub-heading {
+        margin-top: 20px;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'DM', sans-serif;
+    }
+
+    .content-image {
+        margin-top: 20px;
+        background-image: url("../images/gamer_mobile.png");
+        /*background-color: yellow;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+}
+
+.cta {
+    margin-top: 20px;
+    background-color: #FE142F; /* Rose */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: 'DM', sans-serif;
+  }
+
+._Footer {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    font-family: 'DM', sans-serif;
+    font-size: 13px;
+    color: #FE142F;
 }
