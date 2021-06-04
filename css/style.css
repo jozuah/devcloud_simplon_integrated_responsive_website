@@ -15,7 +15,7 @@
     align-items: center;
     min-height: 100px;
     /*background-color: grey;*/
-    font-family: 'DM', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     width: 90%;
     margin: auto;
 }
@@ -113,14 +113,14 @@
         margin-top: 20px;
         font-size: 48px;
         font-weight: 500;
-        font-family: 'DM', sans-serif;
+        font-family: 'DM Sans', sans-serif;
     }
 
     .content-text-Sub-heading {
         margin-top: 20px;
         font-size: 13px;
         font-weight: 400;
-        font-family: 'DM', sans-serif;
+        font-family: 'DM Sans', sans-serif;
     }
 
     .content-image {
@@ -146,7 +146,7 @@
         display: inline-block;
         font-size: 16px;
         border-radius: 8px;
-        font-family: 'DM', sans-serif;
+        font-family: 'DM Sans', sans-serif;
       }
 
 }
@@ -178,7 +178,7 @@
         margin-top: 5%;
         font-size: 85px;
         font-weight: 500;
-        font-family: 'DM', sans-serif;
+        font-family: 'DM Sans', sans-serif;
         color: white;
     }
 
@@ -186,7 +186,7 @@
         margin-top: 20px;
         font-size: 20px;
         font-weight: 400;
-        font-family: 'DM', sans-serif;
+        font-family: 'DM Sans', sans-serif;
         color: white;
         width: 35%;
         
@@ -203,11 +203,16 @@
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 16px;
     border-radius: 8px;
-    font-family: 'DM', sans-serif;
-  }
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.cta:hover {
+    box-shadow: 0 0 4px white;
+}
 
 /************** Modal desktop ************************/
 /* https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -224,8 +229,9 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.8); /* white w/ opacity */
+    transition:all 150ms ease-in-out;
 
   }
 
@@ -246,19 +252,19 @@
 .middle-container{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .modal-container{
     flex-direction: column;
     width: 300px;
-    height: 500px;
+    height: 550px;
     background-color: #232323;
     color: white;
     border-radius: 8px;
     padding: 15px 15px;
     font-size: 11px;
     font-weight: 400;
-    font-family: 'DM', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 form .user-details .text-box {
@@ -344,6 +350,7 @@ form .user-details .checkbox-box {
 
 .submit-box input {
     margin-top: 10px;
+    margin-left: 90px;
     background-color: #FE142F; /* Rose */
     border: none;
     color: white;
@@ -352,15 +359,49 @@ form .user-details .checkbox-box {
     text-decoration: none;
     font-size: 12px;
     border-radius: 8px;
-    font-family: 'DM', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
-  /************************** Footer **************************/
+.submit-box input:hover {
+    box-shadow: 0 0 4px white;
+}
+
+/******************* VALIDATION FORM ************************/
+
+#errorMessageFirstName, #errorMessageLastName, #errorMessageEmail, #errorMessageBirthdate, #errorMessageTournaments, #errorMessageTerms {
+    color: #FE142F;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+}
+
+
+/************************** Footer **************************/
 ._Footer {
     margin-top: 20px;
     display:flex;
     justify-content: center;
-    font-family: 'DM', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 13px;
     color: #FE142F;
+}
+
+/**************** SIGN UP VALID **************/
+
+.modalV {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* white w/ opacity */
+    transition:all 150ms ease-in-out;
+
+}
+
+.signupValidText {
+    
 }

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game On</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -35,7 +35,7 @@
     </nav>
     <div class="container">
         <div class = "half-container">
-            <div class="content-text-slogan">Us Nationwide Game-a-Thon
+            <div class="content-text-slogan">US Nationwide Game-a-Thon
 
             </div>
             <div class= "content-text-Sub-heading"> Do you live to game ? Our next gaming event is now accepting reservations for players, but spot are limited.
@@ -54,27 +54,33 @@
                 <span class="close">&times;</span>
             </div>
             <div>
-                <form action="#">
+                <form action="/signup.html" name="myForm" onsubmit="return validateForm()" >
+
                     <div class="user-details">
                         <div class="text-box">
-                            <span class="details">First name</span>
-                            <input type="text" placeholder="" required>
+                            <span class="details" >First name</span>
+                            <input type="text" placeholder="" id="FirstName">
+                            <span id="errorMessageFirstName"></span>
                         </div>
                         <div class="text-box">
                             <span class="details">Last name</span>
-                            <input type="text" placeholder="" required>
+                            <input type="text" placeholder="" id="LastName">
+                            <span id="errorMessageLastName"></span>
                         </div>
                         <div class="text-box">
                             <span class="details">Email</span>
-                            <input type="text" placeholder="" required>
+                            <input type="text" placeholder="" id="Email">
+                            <span id="errorMessageEmail"></span>
                         </div>
                         <div class="text-box">
                             <span class="details">Birthdate</span>
-                            <input type="text" placeholder="" required>
+                            <input type="date" placeholder="" id="Birthdate">
+                            <span id="errorMessageBirthdate"></span>
                         </div>
                         <div class="text-box">
                             <span class="details">How many tournaments have you attended?</span>
-                            <input type="text" placeholder="" required>
+                            <input type="number" placeholder="" id="Tournaments">
+                            <span id="errorMessageTournaments"></span>
                         </div>
                         <div class="radio-box">
                             <div style="margin-bottom: 8px;">
@@ -95,16 +101,18 @@
                         </div>
                         <div class="checkbox-box">
                             <div>
-                                <input type="checkbox" id="lorem" name="lorem"checked>
-                                <label for="lorem">Lorem ipsum blablabla tu conné</label>
+                                <input type="checkbox" id="Terms" name="termsconditions" checked>
+                                <label for="Terms">Accept terms conditions.</label>
+                                <span id="errorMessageTerms"></span>
                             </div>
+                            
                             <div>
                                 <input type="checkbox" id="lorem2" name="lorem">
                                 <label for="lorem2">Lorem ipsum blablabla tu conné</label>
                             </div>
                         </div>
                         <div class="submit-box">
-                            <input type="submit" value="Go">
+                            <input type="submit" value="Sign Up">
                         </div>
                     </div>
                 </form>
