@@ -209,6 +209,153 @@
     font-family: 'DM', sans-serif;
   }
 
+/************** Modal desktop ************************/
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+/* https://www.youtube.com/watch?v=okbByPWS1Xc */
+
+/* The Close Button */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.middle-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.modal-container{
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    background-color: #232323;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 15px;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'DM', sans-serif;
+}
+
+form .user-details .text-box {
+    margin: 10px 0 6px 0;
+} 
+
+form .user-details .radio-box {
+    margin: 10px 0 6px 0;
+} 
+
+form .user-details .checkbox-box {
+    margin: 20px 0 10px 0;
+} 
+
+.modal-container .user-details .text-box input{
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+}
+.radio-box .details span{
+    width: 100%;
+}
+
+
+/* custom radio button */
+/* https://dev.to/kallmanation/styling-a-radio-button-with-only-css-4llc*/
+.radio-box input[type="radio"] {
+    display: none;
+  }
+
+.radio-box input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: gray;
+}
+
+.radio-box input[type="radio"]:checked + *::before {
+    background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+    border-color: teal;
+  }
+
+.radio-box input[type="radio"]:checked + * {
+    color: teal;
+}
+
+/* custom checkbox */
+
+.checkbox-box input[type="checkbox"] {
+    display: none;
+  }
+
+.checkbox-box input[type="checkbox"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.3rem;
+    border-radius: 20%;
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: gray;
+    background: radial-gradient(grey 100%, teal 40%, transparent 50%, transparent);
+}
+
+.checkbox-box input[type="checkbox"]:checked + *::before {
+    background: radial-gradient(teal 100%, teal 40%, transparent 50%, transparent);
+    border-color: teal;
+  }
+
+.checkbox-box input[type="checkbox"]:checked + * {
+    color: teal;
+}
+
+
+
+.submit-box input {
+    margin-top: 10px;
+    background-color: #FE142F; /* Rose */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 8px;
+    font-family: 'DM', sans-serif;
+}
+
+  /************************** Footer **************************/
 ._Footer {
     margin-top: 20px;
     display:flex;
