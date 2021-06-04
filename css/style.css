@@ -347,11 +347,12 @@ form .user-details .checkbox-box {
     color: teal;
 }
 
-
+.submit-box {
+    text-align: center;
+}
 
 .submit-box input {
     margin-top: 10px;
-    margin-left: 90px;
     background-color: #FE142F; /* Rose */
     border: none;
     color: white;
